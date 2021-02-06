@@ -10,7 +10,7 @@ footer{
     text-align: center;
 }
 .backgroundhome{
-    background-image: url("../img/Background.jpg");
+    background-image: url("../img/Background.gif");
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-size:cover;
@@ -26,7 +26,7 @@ footer{
   background: linear-gradient(153deg, rgba(149,208,75,0.30) 32%, rgba(76,238,245,0.30) 100%);
   margin-right:900px;
   width:35%;
-  height:300px;
+  height:330px;
   font-family: 'VT323', monospace;
   font-size:17px;
   border-radius:5px;
@@ -63,4 +63,14 @@ footer{
 .nav-link{
   font-size:19px;
   color:white;
+}
+.iconlogo{
+  width:30px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+.iconlogin{
+  width:40px;
+  padding-right: 10px;
+  margin-bottom: 5px;
 }

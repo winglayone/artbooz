@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div>
             <div class="formlogin">
-                <div class="cardkepala">{{ __('Login') }}</div>
+                <div class="cardkepala"><img class="iconlogin" src="../img/Login.png">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -13,8 +13,8 @@
 
                         <div class="form-group row">
 
-                            <div class="col-md-6">
-                                <input placeholder="E-Mail Address" id="email" type="email" class="forminput @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <div class="cardkepala">
+                                <img class="iconlogo" src="../img/Email.png"><input placeholder="E-Mail Address" id="email" type="email" class="forminput @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -26,8 +26,8 @@
 
                         <div class="form-group row">
 
-                            <div class="col-md-6">
-                                <input placeholder="Password" id="password" type="password" class="forminput @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            <div class="cardkepala">
+                                <img class="iconlogo" src="../img/Password.png"><input placeholder="Password" id="password" type="password" class="forminput @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
