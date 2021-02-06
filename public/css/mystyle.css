@@ -22,19 +22,25 @@ footer{
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  background:rgb(0,0,0,0.40);
+  background: rgb(149,208,75);
+  background: linear-gradient(153deg, rgba(149,208,75,0.30) 32%, rgba(76,238,245,0.30) 100%);
   margin-right:900px;
   width:35%;
   height:300px;
+  font-family: 'VT323', monospace;
+  font-size:17px;
+  border-radius:5px;
+  color:white;
 }
 .forminput{
   height: 25px;
   width: 350px;
   background-color: transparent;
   border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: darkred;
+  border-width: 0px 0px 2px 0px;
+  border-color: white;
   outline:0;
+  color:white;
 }
 .cardkepala {
   padding: 0.75rem 1.25rem;
@@ -43,8 +49,18 @@ footer{
 
 }
 .navbar{
-  border-bottom: 1px solid rgb(191, 191, 191);
+  width: 100%;
+  border-bottom: 1px solid white;
+  font-family: 'VT323', monospace;
+  color:white;
 }
 .logogambar{
   width:100px;
+}
+::placeholder {
+  color: rgb(191, 191, 191);
+}
+.nav-link{
+  font-size:19px;
+  color:white;
 }
