@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+<body class="backgroundhome">
 <div class="container">
     <div class="row justify-content-center">
         <div>
@@ -67,4 +68,5 @@
         </div>
     </div>
 </div>
+</body>
 @endsection

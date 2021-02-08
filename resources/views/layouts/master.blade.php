@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
 </head>
-<body class="backgroundhome">
+<body>
   <div id="app">
     <div class="container-fluid">
       <div class="row">
@@ -38,11 +38,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" style="color:white;" href="#">Profile</a>
+                <a class="nav-link" style="color:white;" href="#"><img class="iconnav" src="../img/Profile.png">Profile</a>
               </li>
               <li class="nav-item dropdown">
                 <a style="color:white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Museum
+                  <img class="iconnav" src="../img/Museum.png">Museum
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Music Art</a>
@@ -62,13 +62,13 @@
                 @guest
                     @if (Route::has('login'))
                         <li class="nav-item">
-                            <a style="color:white;" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a style="color:white;" class="nav-link" href="{{ route('login') }}"><img class="iconnav" src="../img/Login.png">{{ __('Login') }}</a>
                         </li>
                     @endif
 
                     @if (Route::has('register'))
                         <li class="nav-item">
-                            <a style="color:white;" class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a style="color:white;" class="nav-link" href="{{ route('register') }}"><img class="iconnav" src="../img/Register.png">{{ __('Register') }}</a>
                         </li>
                     @endif
                 @else
