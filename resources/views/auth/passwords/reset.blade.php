@@ -4,9 +4,9 @@
 <body class="backgroundreset">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div>
             <div class="formreset">
-                <div class="card-header"><img class="iconlogin" src="{{ asset('img/Reset.png') }}">{{ __('Reset Password') }}</div>
+                <div class="cardkepala"><img class="iconlogin" src="{{ asset('img/Reset.png') }}">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
@@ -14,9 +14,10 @@
 
                         <input type="hidden" name="token" value="{{ $token }}">
 
+
                         <div class="form-group row">
 
-                            <div class="col-md-6">
+                            <div class="cardkepala">
                                 <input id="email" type="email" placeholder="E-Mail Address" class="forminputmail @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -29,7 +30,7 @@
 
                         <div class="form-group row">
 
-                            <div class="col-md-6">
+                            <div class="cardkepala">
                                 <input id="password" type="password" placeholder="Password" class="forminputmail @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
@@ -42,7 +43,7 @@
 
                         <div class="form-group row">
 
-                            <div class="col-md-6">
+                            <div class="cardkepala">
                                 <input id="password-confirm" type="password" placeholder="Confirm Password" class="forminputmail" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
